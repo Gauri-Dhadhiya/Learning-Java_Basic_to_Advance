@@ -1,0 +1,27 @@
+# Notification System
+
+## Overview
+This notification system supports sending notifications via Email and SMS. It is designed to be easily extensible for adding new channels. The implementation adheres to design principles and employs various design patterns to achieve its objectives.
+
+## Features
+- Supports Email and SMS notifications.
+- New notification channels can be integrated with minimal code changes.
+- Subscribers can receive notifications based on their chosen channel.
+
+## Design Patterns Used
+1. *Factory Pattern*: To create instances of notification channels.
+2. *Singleton Pattern*: For managing a single instance of the user registry.
+3. *Adapter Pattern*: To adapt the notification sending functionality.
+4. *Facade Pattern*: Simplifies the interface for sending notifications.
+5. *Strategy Pattern*: To define a family of notification types and make them interchangeable.
+6. *Observer Pattern*: For notifying subscribers of new messages.
+
+## Usage
+Compile the code and run the NotificationSystem class with command-line arguments:
+- <channelType>: Either Email or SMS
+- <subject>: Subject of the notification
+- <message>: Body of the notification
+
+## Assumptions
+- Users are hardcoded for demonstration purposes.
+- No actual email or SMS sending logic is implemented.
